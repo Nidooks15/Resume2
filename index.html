@@ -3,31 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Resume | Angelmer Piosquinto</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <H1>Angelmer Pioquinto</H1>
-    <h2>Web Developer</h2>
-    <h3>Birthday:Secret</h3>
-    <h3>Birthplace: Daet, Camarines Norte Philippines</h3>
-    <h3>Email: angelmerpioquinto@gmail.com</h3>
-    <hr>
-    <h2>Hobby</h2>
-    <ul>
-        <li>Playing Video Games</li>
-        <li>Makipagmaritesan</li>
-        <li>Manira ng tao</li>
-        <li>Mag long drive</li>
-        <li>Badminton</li>
-    </ul>
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-    </ul>
 
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">AP.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Angelmer Piosquinto</h1>
+            <p>Full Stack Developer & Creative Thinker</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <!-- Placeholder for User Image -->
+                    <span>Profile Image</span>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Angelmer, a passionate developer based in the Philippines. 
+                        I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
+                    </p>
+                    <p>
+                        My goal is to always build products that provide pixel-perfect, performant experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="experience-item">
+                    <h3 class="role-title">Software Engineer</h3>
+                    <span class="company">Tech Company Inc.</span>
+                    <span class="date">2023 - Present</span>
+                    <p>
+                        Developing high-quality web applications using modern technologies. 
+                        Collaborating with cross-functional teams to deliver scalable solutions.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h3 class="role-title">Junior Developer</h3>
+                    <span class="company">StartUp Hub</span>
+                    <span class="date">2021 - 2023</span>
+                    <p>
+                        Assisted in the development of client-facing websites. 
+                        Maintained legacy codebases and improved performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">UI/UX Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">Project 1</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Project Name</h3>
+                        <p class="project-desc">A brief description of the project and the technologies used.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">Project 2</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Another App</h3>
+                        <p class="project-desc">Explaining what this project does and the problem it solves.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">Project 3</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Creative Work</h3>
+                        <p class="project-desc">Showcasing creative ability and design skills.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <h2>Get In Touch</h2>
+            <p class="contact-text">
+                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <a href="mailto:email@example.com" class="btn">Say Hello</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Angelmer Piosquinto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
