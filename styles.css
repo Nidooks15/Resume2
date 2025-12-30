@@ -169,16 +169,16 @@ nav {
 .about-img {
   width: 100%;
   height: 400px;
-  background-color: var(--card-bg);
   border-radius: 12px;
   position: relative;
   overflow: hidden;
   border: 1px solid var(--border-color);
-  /* Placeholder styling for image */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--muted-text);
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Experience Section */
