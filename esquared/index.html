@@ -143,16 +143,8 @@
         </div>
     </footer>
 
-    </body>script>
-    
     <script type="module">
         import { db } from './js/db.js';
-
-        // Add Supabase CDN if not already present in head
-        // Note: It is safer to add this to the head of the document via editing the file, 
-        // but for now we assume it is added or we should add it dynamically if missing.
-        // Actually, let's verify if the CDN is present in the file content. 
-        // The user didn't explicitly add it. I should probably add it to the head or dynamically load it.
         
         async function loadFeatured() {
             const container = document.getElementById('featuredProjects');
@@ -204,42 +196,6 @@
         }
         
         loadFeatured();
-    </script>                // Determine images to show
-                let imagesHtml = '';
-                if (p.gallery && p.gallery.length > 1) {
-                    // Multi-image Carousel
-                    imagesHtml = `
-                        <div style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
-                            ${p.gallery.map(img => `
-                                <img src="${img}" style="min-width: 100%; height: 250px; object-fit: cover; scroll-snap-align: start;">
-                            `).join('')}
-                        </div>
-                    `;
-                } else {
-                    // Single Image
-                    const img = (p.gallery && p.gallery[0]) || p.imageUrl || 'https://via.placeholder.com/400x300?text=Project';
-                    imagesHtml = `<img src="${img}" style="width: 100%; height: 250px; object-fit: cover;">`;
-                }
-
-                const card = document.createElement('div');
-                card.innerHTML = `
-                <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); height: 100%;">
-                    <div style="position: relative;">
-                        ${imagesHtml}
-                        <span style="position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.7); color: white; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.8rem; backdrop-filter: blur(4px); pointer-events: none;">${p.status}</span>
-                        ${(p.gallery && p.gallery.length > 1) ? '<span style="position: absolute; bottom: 1rem; right: 1rem; background: rgba(0,0,0,0.5); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; pointer-events: none;">Scroll ↔</span>' : ''}
-                    </div>
-                    <div style="padding: 1.5rem;">
-                        <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--primary); font-weight: 600;">${p.type}</span>
-                        <h3 class="mb-1" style="font-size: 1.25rem;">${p.title}</h3>
-                        <p class="mb-1" style="color: #64748b;">${p.location}</p>
-                        <a href="project-details.html?id=${p.id}" style="color: var(--primary-dark); font-weight: 600; text-decoration: none;">View Details →</a>
-                    </div>
-                </div>
-                `;
-                container.appendChild(card);
-            });
-        }
     </script>
     <script>
         // Simple Mobile Toggle
